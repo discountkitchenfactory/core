@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<config
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:ObjectManager/etc/config.xsd'
+>
+<!-- 2018-10-24 -->
+	<type name='Magento\Framework\App\PageCache\Kernel'>
+		<plugin
+			name='Dkf\Core\Plugin\Framework\App\PageCache\Kernel'
+			type='Dkf\Core\Plugin\Framework\App\PageCache\Kernel'
+		/>
+	</type>
+</config>
