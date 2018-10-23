@@ -9,6 +9,8 @@ A custom module for [discountkitchenfactory.co.uk](https://discountkitchenfactor
 rm -rf var/di var/generation generated/code && /opt/plesk/php/7.1/bin/php bin/magento setup:di:compile
 rm -rf pub/static/* && /opt/plesk/php/7.1/bin/php bin/magento setup:static-content:deploy en_US en_GB
 /opt/plesk/php/7.1/bin/php bin/magento cache:clean && sudo apachectl restart && sudo nginx -s reload
+chmod -R -v 777 var/* pub/*
+/opt/plesk/php/7.1/bin/php bin/magento cache:enable
 /opt/plesk/php/7.1/bin/php bin/magento maintenance:disable
 ```
 
@@ -21,6 +23,8 @@ rm -rf pub/static/* && /opt/plesk/php/7.1/bin/php bin/magento setup:static-conte
 rm -rf var/di var/generation generated/code && /opt/plesk/php/7.1/bin/php bin/magento setup:di:compile
 rm -rf pub/static/* && /opt/plesk/php/7.1/bin/php bin/magento setup:static-content:deploy en_US en_GB
 /opt/plesk/php/7.1/bin/php bin/magento cache:clean && sudo apachectl restart && sudo nginx -s reload
+chmod -R -v 777 var/* pub/*
+/opt/plesk/php/7.1/bin/php bin/magento cache:enable
 /opt/plesk/php/7.1/bin/php bin/magento maintenance:disable
 ```
 
