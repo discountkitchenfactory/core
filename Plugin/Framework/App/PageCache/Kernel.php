@@ -15,15 +15,19 @@ final class Kernel {
 		$html = $r->getBody();
 		if (false !== stripos($html, "</body>")) {
 			preg_match_all('~<\s*\blink\b[^>]*\/>~is', $html, $links);
-			if ($links and isset($links[0]) and $links[0]) {
+			// 2018-10-25
+			// This block reduces the mobile's optimization score from 95 to 87,
+			// but increases the desktop's optimization score from 84 to 85.
+			if (false && $links and isset($links[0]) and $links[0]) {
 				$links[0] = array_reverse($links[0]);
 				foreach ($links[0] as $l) {
 					if (
-						false === strpos($l, 'styles-m')
-						&& false === strpos($l, 'styles-l')
+						false !== strpos($l, 'cookielaw')
+						//false === strpos($l, 'styles-m')
+						//&& false === strpos($l, 'styles-l')
 						//&& false === strpos($l, 'layout_default')
 						//&& false === strpos($l, 'design_default')
-						&& false === strpos($l, 'Dkf_Core')
+						//&& false === strpos($l, 'Dkf_Core')
 					) {
 						$html = str_replace($l, '', $html);
 						$html = str_ireplace("</body>", "$l</body>", $html);
