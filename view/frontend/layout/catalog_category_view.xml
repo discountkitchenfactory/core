@@ -20,5 +20,9 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 "Remove `CleverSoft_Base::css/jquery.bxslider.css` from category pages:
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/4 -->
 		<remove src='CleverSoft_Base::css/jquery.bxslider.css'/>
+<!-- 2018-11-18
+"Remove `CleverSoft_Base::css/jquery-ui.css` from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/5 -->
+		<remove src='CleverSoft_Base::css/jquery-ui.css'/>
 	</head>
 </page>
