@@ -59,7 +59,7 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 <!-- 2018-11-18
 "Remove `jquery/jquery-ui.js` from category pages:
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/14 -->
-		<remove src='jquery/jquery-ui.js'/>
+	<!--	<remove src='jquery/jquery-ui.js'/> -->
 	</head>
 	<body>
 <!-- 2018-11-18
