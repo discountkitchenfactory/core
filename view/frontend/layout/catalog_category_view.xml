@@ -16,5 +16,9 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 "Remove `CleverSoft_Base::css/owl.theme.default.min.css` from category pages:
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/3 -->
 		<remove src='CleverSoft_Base::css/owl.theme.default.min.css'/>
+<!-- 2018-11-18
+"Remove `CleverSoft_Base::css/jquery.bxslider.css` from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/4 -->
+		<remove src='CleverSoft_Base::css/jquery.bxslider.css'/>
 	</head>
 </page>
