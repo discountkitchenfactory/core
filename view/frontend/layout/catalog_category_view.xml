@@ -48,5 +48,9 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 "Remove `Magento_Swatches::css/swatches.css` from category pages:
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/11 -->
 		<remove src='Magento_Swatches::css/swatches.css'/>
+<!-- 2018-11-18
+"Remove `CleverSoft_CleverLayeredNavigation::css/clevershopby.css` from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/12 -->
+		<remove src='CleverSoft_CleverLayeredNavigation::css/clevershopby.css'/>
 	</head>
 </page>
