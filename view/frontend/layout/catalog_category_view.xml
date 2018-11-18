@@ -52,5 +52,16 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 "Remove `CleverSoft_CleverLayeredNavigation::css/clevershopby.css` from category pages:
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/12 -->
 		<remove src='CleverSoft_CleverLayeredNavigation::css/clevershopby.css'/>
+<!-- 2018-11-18
+"Remove the `CleverSoft_CleverCookieLaw` module from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/13 -->
+		<remove src='CleverSoft_CleverCookieLaw::css/cookielaw.css'/>
 	</head>
+	<body>
+<!-- 2018-11-18
+"Remove the `CleverSoft_CleverCookieLaw` module from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/13 -->
+		<referenceBlock name='cookielaw.after_body_start' remove='true'/>
+		<referenceBlock name='cookielaw.before_body_end' remove='true'/>
+	</body>
 </page>
