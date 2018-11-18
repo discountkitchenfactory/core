@@ -3,8 +3,14 @@
 	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
 >
+	<head>
 <!-- 2018-11-18
-"Remove `mage/gallery/gallery.css` from category pages: it should improve the Google PageSpeed score":
-https://github.com/discountkitchenfactory/core/issues/1 -->
-	<head><remove src='mage/gallery/gallery.css'/></head>
+"Remove `mage/gallery/gallery.css` from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/1 -->
+		<remove src='mage/gallery/gallery.css'/>
+<!-- 2018-11-18
+"Remove `CleverSoft_Base::css/owl.carousel.css` from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/2 -->
+		<remove src='CleverSoft_Base::css/owl.carousel.css'/>
+	</head>
 </page>
