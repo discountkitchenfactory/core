@@ -1,9 +1,16 @@
-// 2018-10-23
-// Google PageSpeed Insights, Mobile mode:
-// «Prioritize visible content»:
-// «Only about 28% of the final above-the-fold content could be rendered with the full HTML response»
 @media (max-width: 767px) {
+	// 2018-10-23
+	// Google PageSpeed Insights, Mobile mode:
+	// «Prioritize visible content»:
+	// «Only about 28% of the final above-the-fold content could be rendered with the full HTML response»
 	body.cms-home .zoo-main-content-area > div {
 		&:nth-of-type(2), &:nth-of-type(3) {display: none;}
 	}
+	// 2018-11-18
+	// "Google PageSpeed Insights: achieve a green «Optimization» mark for a Magento 2 category page"
+	// https://www.upwork.com/ab/f/contracts/21057343
+	// https://www.upwork.com/ab/f/contracts/21057354
+	.zoo-breadcrumbs > .container > .items {padding: 0.25rem 0 !important;}
+	#zoo-main-content {padding-top: 0 !important;}
+	.toolbar-products {margin-bottom: 0 !important;}
 }
