@@ -61,6 +61,7 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/14 -->
 		<remove src='jquery/jquery-ui.js'/>
 		<remove src='CleverSoft_CleverSocialLogin::css/pslogin.css'/>
+		<remove src='CleverSoft_CleverQuickView::css/quickview.css'/>
 	</head>
 	<body>
 <!-- 2018-11-18
@@ -68,6 +69,7 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/13 -->
 		<referenceBlock name='cookielaw.after_body_start' remove='true'/>
 		<referenceBlock name='cookielaw.before_body_end' remove='true'/>
+		<referenceBlock name='quickview.theme.scripts' remove='true'/>
 		<referenceContainer name='dkf.main.content.container'>
 			<container htmlClass='category-view' htmlTag='div' name='dkf.category.view.container.bottom'/>
 		</referenceContainer>		
