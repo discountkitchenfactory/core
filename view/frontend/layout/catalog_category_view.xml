@@ -36,5 +36,9 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 "Remove `mage/calendar.css` from category pages:
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/8 -->
 		<remove src='mage/calendar.css'/>
+<!-- 2018-11-18
+"Remove `CleverSoft_CleverSlider::css/flexslider.css` from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/9 -->
+		<remove src='CleverSoft_CleverSlider::css/flexslider.css'/>
 	</head>
 </page>
