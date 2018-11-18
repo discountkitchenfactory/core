@@ -40,5 +40,9 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 "Remove `CleverSoft_CleverSlider::css/flexslider.css` from category pages:
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/9 -->
 		<remove src='CleverSoft_CleverSlider::css/flexslider.css'/>
+<!-- 2018-11-18
+"Remove `CleverSoft_CleverSlider::css/styles.css` from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/10 -->
+		<remove src='CleverSoft_CleverSlider::css/styles.css'/>
 	</head>
 </page>
