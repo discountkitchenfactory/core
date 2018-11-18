@@ -1,7 +1,10 @@
 <?php
 namespace Dkf\Core\Plugin\Framework\App\PageCache;
+use Magento\Framework\App\ObjectManager as OM;
 use Magento\Framework\App\PageCache\Kernel as Sb;
 use Magento\Framework\App\Response\Http as R;
+use Magento\Framework\View\Layout;
+use Magento\Framework\View\LayoutInterface as ILayout;
 // 2018-10-24
 final class Kernel {
 	/**
@@ -14,23 +17,26 @@ final class Kernel {
 	function beforeProcess(Sb $sb, R $r) {
 		$html = $r->getBody();
 		if (false !== stripos($html, "</body>")) {
-			preg_match_all('~<\s*\blink\b[^>]*\/>~is', $html, $links);
 			// 2018-10-25
 			// This block reduces the mobile's optimization score from 95 to 87,
 			// but increases the desktop's optimization score from 84 to 85.
-			if (false && $links and isset($links[0]) and $links[0]) {
-				$links[0] = array_reverse($links[0]);
-				foreach ($links[0] as $l) {
-					if (
-						false !== strpos($l, 'cookielaw')
-						//false === strpos($l, 'styles-m')
-						//&& false === strpos($l, 'styles-l')
-						//&& false === strpos($l, 'layout_default')
-						//&& false === strpos($l, 'design_default')
-						//&& false === strpos($l, 'Dkf_Core')
-					) {
-						$html = str_replace($l, '', $html);
-						$html = str_ireplace("</body>", "$l</body>", $html);
+			if (in_array('catalog_category_view', $this->handles())) {
+				preg_match_all('~<\s*\blink\b[^>]*\/>~is', $html, $links);
+				if ($links && isset($links[0]) && $links[0]) {
+					//$links[0] = array_reverse($links[0]);
+					foreach ($links[0] as $l) {
+						if (
+							true
+							//false !== strpos($l, 'cookielaw')
+							//false === strpos($l, 'styles-m')
+							//&& false === strpos($l, 'styles-l')
+							//&& false === strpos($l, 'layout_default')
+							//&& false === strpos($l, 'design_default')
+							//&& false === strpos($l, 'Dkf_Core')
+						) {
+							$html = str_replace($l, '', $html);
+							$html = str_ireplace("</body>", "$l</body>", $html);
+						}
 					}
 				}
 			}
@@ -44,5 +50,16 @@ final class Kernel {
 			$r->setBody($html);
 		}
 		return [$r];
+	}
+
+	/**
+	 * 2015-12-21
+	 * @used-by beforeProcess
+	 * @return string[]
+	 */
+	private function handles() {
+		$om = OM::getInstance(); /** @var OM $om */
+		$l = $om->get(ILayout::class);  /** @var ILayout|Layout $l */
+		return ($u = $l->getUpdate()) ? $u->getHandles() : [];
 	}
 }
