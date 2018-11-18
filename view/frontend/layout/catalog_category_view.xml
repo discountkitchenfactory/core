@@ -28,5 +28,9 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 "Remove `CleverSoft_Base::css/jquery.fullPage.css` from category pages:
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/6 -->
 		<remove src='CleverSoft_Base::css/jquery.fullPage.css'/>
+<!-- 2018-11-18
+"Remove `Magefan_Blog::css/blog-m.css` from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/7 -->
+		<remove src='Magefan_Blog::css/blog-m.css'/>
 	</head>
 </page>
