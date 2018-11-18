@@ -67,5 +67,13 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/13 -->
 		<referenceBlock name='cookielaw.after_body_start' remove='true'/>
 		<referenceBlock name='cookielaw.before_body_end' remove='true'/>
+		<referenceContainer name='dkf.main.content.container'>
+			<container htmlClass='category-view' htmlTag='div' name='dkf.category.view.container.bottom'/>
+		</referenceContainer>		
+		<move
+			after='-'
+			destination='dkf.category.view.container.bottom'
+			element='category.description'
+		/>
 	</body>
 </page>
