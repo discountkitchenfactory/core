@@ -44,5 +44,9 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 "Remove `CleverSoft_CleverSlider::css/styles.css` from category pages:
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/10 -->
 		<remove src='CleverSoft_CleverSlider::css/styles.css'/>
+<!-- 2018-11-18
+"Remove `Magento_Swatches::css/swatches.css` from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/11 -->
+		<remove src='Magento_Swatches::css/swatches.css'/>
 	</head>
 </page>
