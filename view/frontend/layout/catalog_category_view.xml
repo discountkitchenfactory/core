@@ -32,5 +32,9 @@ it should improve the Google PageSpeed score": https://github.com/discountkitche
 "Remove `Magefan_Blog::css/blog-m.css` from category pages:
 it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/7 -->
 		<remove src='Magefan_Blog::css/blog-m.css'/>
+<!-- 2018-11-18
+"Remove `mage/calendar.css` from category pages:
+it should improve the Google PageSpeed score": https://github.com/discountkitchenfactory/core/issues/8 -->
+		<remove src='mage/calendar.css'/>
 	</head>
 </page>
