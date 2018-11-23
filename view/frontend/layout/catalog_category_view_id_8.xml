@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<page 
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
+>
+	<body>
+		<referenceContainer name='dkf.main.content.container'>
+			<container htmlClass='category-view' htmlTag='div' name='dkf.category.view.container.bottom'/>
+		</referenceContainer>		
+		<move
+			after='-'
+			destination='dkf.category.view.container.bottom'
+			element='category.description'
+		/>
+	</body>
+</page>

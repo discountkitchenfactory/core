@@ -13,9 +13,12 @@
 	.zoo-breadcrumbs > .container > .items {padding: 0.25rem 0 !important;}
 	#zoo-main-content {padding-top: 0 !important;}
 	.toolbar-products {margin-bottom: 0 !important;}
-	.page-header {
-		.panel.wrapper {padding: 0;}
-		//.header-content	{padding-top: 0;}
-	}
+	.page-header { .panel.wrapper {padding: 0;} }
 }
-body.page-products {#zoo-main-content {.page.messages + .category-view {display: none;}}}
+body.page-products {
+	&.category-high-gloss-kitchens, &.category-painted-kitchens #zoo-main-content {
+		.page.messages, .page-title-wrapper {& + .category-view {display: none;}}
+	}
+	.product a {color: rgb(59, 59, 59)}
+	#zoo-main-content {padding-top: 0 !important;}
+}
