@@ -1,4 +1,4 @@
-A custom module for [discountkitchenfactory.co.uk](https://discountkitchenfactory.co.uk).
+A custom module for [discountkitchenfactory.co.uk](https://discountkitchenfactory.co.uk) (Magento 2).
 
 ## How to install
 ```
